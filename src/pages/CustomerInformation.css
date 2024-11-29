@@ -1,0 +1,164 @@
+/* Container for the entire form */
+.customer-info-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:  #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table layout */
+.customer-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Table headers and data cells */
+.customer-info-table th,
+.customer-info-table td {
+  padding: 12px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* Header styling */
+.customer-info-table th {
+  background-color: hsla(0, 80%, 2%, 0.581);
+  font-weight: bold;
+}
+
+/* Data cells */
+.customer-info-table td {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Input fields styling */
+.customer-info-table input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Labels styling */
+.customer-info-table label {
+  font-weight: bold;
+  display: block;
+}
+
+/* Submit button styling (centered by default) */
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #218838;
+}
+
+/* Message styling */
+p {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Alternate row coloring for better readability */
+.customer-info-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.customer-info-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Payment process message (initially hidden) */
+.payment-process-message {
+  display: none; /* Hidden by default */
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+/* Payment options container */
+.payment-options {
+  margin-top: 35px;
+}
+
+/* Display payment options in a column */
+.payment-methods {
+  display: flex;
+  flex-direction: column; /* Display payment options in a column */
+  gap: 15px; /* Space between options */
+  margin-top: 20px;
+}
+
+/* Label for each payment method */
+.payment-method-label {
+  font-size: 18px;
+}
+
+/* Styling for UPI ID input field */
+.upi-id-container {
+  margin-top: 20px;
+}
+
+.upi-id-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for Submit Payment button */
+.submit-payment-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+/* Button hover effect for Submit Payment */
+.submit-payment-button:hover {
+  background-color: #28a745;
+}
+
+/* Styling for UPI ID input when selected payment method is UPI-based */
+.upi-id-container label {
+  font-weight: bold;
+}
+
+/* Alternate row coloring for better readability in payment options */
+.payment-methods label:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.payment-methods label:nth-child(odd) {
+  background-color: #ffffff;
+}
